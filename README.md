@@ -10,6 +10,6 @@ Some ideas for obtaining a :gift: if you are the first that:
 - **Secure me with token**: Use [JWT credentials](https://jwt.io/) to grant access to requests that modify content.
 - **Secure me with social**: Use OAuth to grant access to requests that modify content.
 
-|Repository | NIA    | GitHub Action | Has gift |
-|-----------|--------|---------------|----- |
-|           | |
+| Repository                                                         | NIA    | GitHub Action | Has gift |
+|--------------------------------------------------------------------|--------|---------------|----- |
+| [Daniel-dgp](https://github.com/Daniel-dgp/lab3-web-api/tree/work) | 756128 | [![Build Status](https://github.com/Daniel-dgp/lab3-web-api/actions/workflows/CI.yml/badge.svg?branch=work&event=push)](https://github.com/Daniel-dgp/lab3-web-api/actions/workflows/CI.yml)|
