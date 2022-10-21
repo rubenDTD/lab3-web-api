@@ -1,0 +1,6 @@
+# Recent versions of H2 require special configuration to properly escape reserved keywords like "user".
+spring:
+  jpa:
+    properties:
+      hibernate:
+        globally_quoted_identifiers: true
