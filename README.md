@@ -12,4 +12,4 @@ Some ideas for obtaining a :gift: if you are the first that:
 
 |Repository | NIA    | GitHub Action | Has gift |
 |-----------|--------|---------------|----- |
-|           | |
+| [ZenithGD](https://github.com/ZenithGD/lab3-web-api/tree/work) | 795306 | ![Build Status](https://github.com/ZenithGD/lab3-web-api/actions/workflows/CI.yml/badge.svg?branch=work&event=push) | Plan to implement **Flux** |
