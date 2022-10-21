@@ -78,7 +78,7 @@ every {
 } answers {
     Optional.empty()
 } andThenAnswer {
-    Optional.of(Employee("Tom", "Manage", 1))
+    Optional.of(Employee("Tom", "Manager", 1))
 }
 ```
 
@@ -102,6 +102,7 @@ justRun {
 
 **Setup block**: ensure in first call that the repository save the employee with `id = 1` and with `id = 2` in the second call.
 ```kotlin
+val employee = slot<Employee>()
 every {
     employeeRepository.save(capture(employee))
 } answers {
