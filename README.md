@@ -12,4 +12,4 @@ Some ideas for obtaining a :gift: if you are the first that:
 
 |Repository | NIA    | GitHub Action | Has gift |
 |-----------|--------|---------------|----- |
-|           | |
+| [Hec7or-Uni](https://github.com/Hec7or-Uni/lab3-web-api/tree/work) | 798095 | ![Build Status](https://github.com/Hec7or-Uni/lab3-web-api/actions/workflows/CI.yml/badge.svg?branch=work&event=push) | Plan to implement **Secure me with token** |
