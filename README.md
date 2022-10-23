@@ -12,4 +12,5 @@ Some ideas for obtaining a :gift: if you are the first that:
 
 |Repository | NIA    | GitHub Action | Has gift |
 |-----------|--------|---------------|----- |
+| [Ernesting](https://github.com/Ernesting/lab3-web-api/tree/work) | 798799 | [![Build Status](https://github.com/Ernesting/lab3-web-api/actions/workflows/CI.yml/badge.svg?branch=work&event=push)](https://github.com/Ernesting/lab3-web-api/actions/workflows/CI.yml) 
 | [rubenDTD](https://github.com/rubenDTD/lab3-web-api/tree/work) | 736650 | [![Build Status](https://github.com/rubenDTD/lab3-web-api/actions/workflows/CI.yml/badge.svg?branch=work&event=push)](https://github.com/rubenDTD/lab3-web-api/actions/workflows/CI.yml) |
