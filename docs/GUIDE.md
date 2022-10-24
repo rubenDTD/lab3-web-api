@@ -54,6 +54,7 @@ The code blocks below must be used to complete the setup of the test or to compl
 Each test must be completed with one or more **setup blocks** and one or more **validation blocks** to verify the behaviour tested.
 
 **Setup block**: ensure that the repository returns a specific employee with `id = 1`.
+
 ```kotlin
 every {
     employeeRepository.findById(1)
@@ -63,6 +64,7 @@ every {
 ```
 
 **Setup block**: ensure that the repository does not contain an employee with `id = 2`.
+
 ```kotlin
 every {
     employeeRepository.findById(2)
@@ -72,17 +74,19 @@ every {
 ```
 
 **Setup block**: ensure in first call that the repository does not contain an employee with `id = 1` and a specific employee in the second call.
+
 ```kotlin
 every {
     employeeRepository.findById(1)
 } answers {
     Optional.empty()
 } andThenAnswer {
-    Optional.of(Employee("Tom", "Manage", 1))
+    Optional.of(Employee("Tom", "Manager", 1))
 }
 ```
 
 **Setup block**: ensure in first call that the repository contain a specific with `id = 1` and none identified by `id = 1` in the second call.
+
 ```kotlin
 every {
     employeeRepository.findById(1)
@@ -94,6 +98,7 @@ every {
 ```
 
 **Setup block**: ensure that the call to delete an employee identified by `id = 1` works.
+
 ```kotlin
 justRun {
     employeeRepository.deleteById(1)
@@ -101,7 +106,9 @@ justRun {
 ```
 
 **Setup block**: ensure in first call that the repository save the employee with `id = 1` and with `id = 2` in the second call.
+
 ```kotlin
+val employee = slot<Employee>()
 every {
     employeeRepository.save(capture(employee))
 } answers {
@@ -111,7 +118,8 @@ every {
 }
 ```
 
-**Setup block**: ensure that the repository save the employee withouth modifying its `id`.
+**Setup block**: ensure that the repository save the employee without modifying its `id`.
+
 ```kotlin
 val employee = slot<Employee>()
 every {
@@ -122,6 +130,7 @@ every {
 ```
 
 **Verify block**: verify that `save` has been called twice with a new employee without `id`.
+
 ```kotlin
 verify(exactly = 2) {
     employeeRepository.save(Employee("Mary", "Manager"))
@@ -129,13 +138,15 @@ verify(exactly = 2) {
 ```
 
 **Verify block**: verify that `save` has been called twice with an employee with `id = 1`.
+
 ```kotlin
- verify(exactly = 2) {
+verify(exactly = 2) {
     employeeRepository.save(Employee("Tom", "Manager", 1))
 }
 ```
 
 **Verify block**: verify that `findById(1)` has been called twice.
+
 ```kotlin
 verify(exactly = 2) {
     employeeRepository.findById(1)
@@ -143,6 +154,7 @@ verify(exactly = 2) {
 ```
 
 **Verify block**: verify methods that modify the repository have not been invoked.
+
 ```kotlin
 verify(exactly = 0) {
     employeeRepository.save(any())
@@ -151,6 +163,7 @@ verify(exactly = 0) {
 ```
 
 **Verify block**: verify that `deleteById(1)` has been called once.
+
 ```kotlin
 verify(exactly = 1) {
     employeeRepository.deleteById(1)
@@ -161,9 +174,9 @@ verify(exactly = 1) {
 
 1. Ensure that if the method is safe, the methods that modify the state of the repository have not been invoked.
 
-1. Ensure that if the method is idempotent, the methods that modify the state of the repository are either invoked once or, if they are invoked twice, the second call does not modify the state.
+2. Ensure that if the method is idempotent, the methods that modify the state of the repository are either invoked once or, if they are invoked twice, the second call does not modify the state.
 
-1. Pass the tests
+3. Pass the tests
 
    ```sh
    ./gradlew test  
