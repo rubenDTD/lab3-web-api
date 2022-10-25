@@ -10,11 +10,11 @@ Some ideas for obtaining a :gift: if you are the first that:
 - **Secure me with token**: Use [JWT credentials](https://jwt.io/) to grant access to requests that modify content.
 - **Secure me with social**: Use OAuth to grant access to requests that modify content.
 
-| Repository                                                         | NIA    | GitHub Action | Has gift |
-|--------------------------------------------------------------------|--------|---------------|----- |
-| [Ernesting](https://github.com/Ernesting/lab3-web-api/tree/work)   | 798799 | [![Build Status](https://github.com/Ernesting/lab3-web-api/actions/workflows/CI.yml/badge.svg?branch=work&event=push)](https://github.com/Ernesting/lab3-web-api/actions/workflows/CI.yml) 
-| [rubenDTD](https://github.com/rubenDTD/lab3-web-api/tree/work)     | 736650 | [![Build Status](https://github.com/rubenDTD/lab3-web-api/actions/workflows/CI.yml/badge.svg?branch=work&event=push)](https://github.com/rubenDTD/lab3-web-api/actions/workflows/CI.yml) |
-| [ZenithGD](https://github.com/ZenithGD/lab3-web-api/tree/work)     | 795306 | ![Build Status](https://github.com/ZenithGD/lab3-web-api/actions/workflows/CI.yml/badge.svg?branch=work&event=push) | Plan to implement **Flux** |
+|Repository | NIA    | GitHub Action | Has gift |
+|-----------|--------|---------------|----- |
+| [Ernesting](https://github.com/Ernesting/lab3-web-api/tree/work) | 798799 | [![Build Status](https://github.com/Ernesting/lab3-web-api/actions/workflows/CI.yml/badge.svg?branch=work&event=push)](https://github.com/Ernesting/lab3-web-api/actions/workflows/CI.yml) 
+| [rubenDTD](https://github.com/rubenDTD/lab3-web-api/tree/work) | 736650 | [![Build Status](https://github.com/rubenDTD/lab3-web-api/actions/workflows/CI.yml/badge.svg?branch=work&event=push)](https://github.com/rubenDTD/lab3-web-api/actions/workflows/CI.yml) |
+| [ZenithGD](https://github.com/ZenithGD/lab3-web-api/tree/work) | 795306 | ![Build Status](https://github.com/ZenithGD/lab3-web-api/actions/workflows/CI.yml/badge.svg?branch=work&event=push) | Plan to implement **Flux** |
 | [Daniel-dgp](https://github.com/Daniel-dgp/lab3-web-api/tree/work) | 756128 | [![Build Status](https://github.com/Daniel-dgp/lab3-web-api/actions/workflows/CI.yml/badge.svg?branch=work&event=push)](https://github.com/Daniel-dgp/lab3-web-api/actions/workflows/CI.yml)|
 | [Hec7or-Uni](https://github.com/Hec7or-Uni/lab3-web-api/tree/work) | 798095 | ![Build Status](https://github.com/Hec7or-Uni/lab3-web-api/actions/workflows/CI.yml/badge.svg?branch=work&event=push) | Plan to implement **Secure me with token** |
 | [HugoLazaro](https://github.com/HugoLazaro/lab3-web-api/tree/work)  | 801758 | [![Build Status](https://github.com/HugoLazaro/lab3-web-api/actions/workflows/CI.yml/badge.svg?branch=work&event=push)](https://github.com/Ernesting/lab3-web-api/actions/workflows/CI.yml) 
